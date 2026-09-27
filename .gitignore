@@ -6,4 +6,7 @@ dist/
 node-v*-win-x64.zip
 node-install.log
 preview-*.png
-
+public/images/*.png
+piraye-personal-site-fa-update.zip
+DEPLOY-TO-CHATGPT-SITES.txt
+راهنمای-رفع-خطای-دسترسی.md
