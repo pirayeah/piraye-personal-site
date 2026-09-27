@@ -5,7 +5,8 @@ const mailSubject = encodeURIComponent("Let's connect");
 const mailBody = encodeURIComponent("Hi Piraye,\n\nI came across your website and would love to connect and explore how we might work together.\n\nBest,\n");
 const mailto = `mailto:piraye.777@gmail.com?subject=${mailSubject}&body=${mailBody}`;
 const base = import.meta.env.BASE_URL;
-const socialImage = new URL(`${base}images/piraye-coast-wide.jpg`, Astro.site);
+const asset = (path: string) => `${base.replace(/\/$/, '')}/${path}`;
+const socialImage = new URL(asset('images/piraye-coast-wide.jpg'), Astro.site);
 ---
 
 <!doctype html>
@@ -67,7 +68,7 @@ const socialImage = new URL(`${base}images/piraye-coast-wide.jpg`, Astro.site);
       <main class="main" id="main">
         <section class="portrait-section" aria-labelledby="portrait-title">
           <div class="image-frame hero-image reveal">
-            <img src={`${base}images/piraye-seaside-portrait.jpg`} alt="Piraye standing by the sea" width="1122" height="1402" fetchpriority="high" />
+            <img src={asset('images/piraye-seaside-portrait.jpg')} alt="Piraye standing by the sea" width="1122" height="1402" fetchpriority="high" />
             <span class="image-tag">PORTRAIT / 2026</span>
           </div>
           <div class="portrait-note reveal">
@@ -112,7 +113,7 @@ const socialImage = new URL(`${base}images/piraye-coast-wide.jpg`, Astro.site);
 
           <div class="feature-card reveal">
             <div class="feature-image image-frame">
-              <img src={`${base}images/piraye-at-work.jpg`} alt="Piraye working at a computer" width="1122" height="1402" loading="lazy" />
+              <img src={asset('images/piraye-at-work.jpg')} alt="Piraye working at a computer" width="1122" height="1402" loading="lazy" />
               <span class="image-tag">PROCESS / PRACTICE</span>
             </div>
             <div class="feature-copy">
@@ -199,7 +200,7 @@ const socialImage = new URL(`${base}images/piraye-coast-wide.jpg`, Astro.site);
         </section>
 
         <section class="contact" id="contact">
-          <img src={`${base}images/piraye-coast-wide.jpg`} alt="Piraye at a coastal landscape" width="1672" height="941" loading="lazy" />
+          <img src={asset('images/piraye-coast-wide.jpg')} alt="Piraye at a coastal landscape" width="1672" height="941" loading="lazy" />
           <div class="contact-overlay"></div>
           <div class="contact-content reveal">
             <p class="kicker en">HAVE A COMPLICATED PROBLEM?</p><p class="kicker fa">با یک مسئله پیچیده روبه‌رو هستی؟</p>
@@ -211,6 +212,6 @@ const socialImage = new URL(`${base}images/piraye-coast-wide.jpg`, Astro.site);
         <footer><span>© 2026 PIRAYE PIRHADI</span><span>DESIGNED AROUND CLARITY</span><a href="#top">BACK TO TOP ↑</a></footer>
       </main>
     </div>
-    <script is:inline src={`${base}site.js`}></script>
+    <script is:inline src={asset('site.js')}></script>
   </body>
 </html>

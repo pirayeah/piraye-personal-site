@@ -15,16 +15,20 @@ const requestedLanguage = new URLSearchParams(window.location.search).get('lang'
 setLanguage(['en', 'fa'].includes(requestedLanguage) ? requestedLanguage : (localStorage.getItem('piraye-language') || 'en'));
 languageButton?.addEventListener('click', () => setLanguage(root.dataset.lang === 'en' ? 'fa' : 'en'));
 
-const revealObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('is-visible');
-      revealObserver.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.12 });
+if ('IntersectionObserver' in window) {
+  const revealItems = document.querySelectorAll('.reveal');
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
 
-document.querySelectorAll('.reveal').forEach((item) => revealObserver.observe(item));
+  revealItems.forEach((item) => revealObserver.observe(item));
+  root.classList.add('reveal-ready');
+}
 
 const map = document.querySelector('.system-map');
 const clarify = document.querySelector('.clarify-button');

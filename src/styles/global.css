@@ -60,3 +60,8 @@ html[data-lang="fa"] .contact-actions{direction:rtl}
   .system-map.is-clear .connections{opacity:1}
   .system-map.is-clear .node text{font-size:11px}
 }
+
+/* Content stays visible when scripts, storage, or observers are unavailable. */
+.reveal{opacity:1;transform:none}
+.reveal-ready .reveal{opacity:0;transform:translateY(28px)}
+.reveal-ready .reveal.is-visible{opacity:1;transform:none}
