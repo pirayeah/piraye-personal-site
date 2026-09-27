@@ -44,6 +44,10 @@ html[data-lang="fa"] .contact-actions{direction:rtl}
 .system-map.is-clear .node circle{r:44px}
 
 @media(max-width:700px){
+  .hero-copy{min-width:0;max-width:100%}
+  .hero-copy h1{max-width:100%;font-size:13vw;overflow-wrap:anywhere}
+  .floating-cta{right:18px;left:auto}
+  html[data-lang="fa"] .floating-cta{right:auto;left:18px}
   .problem-options button{min-height:44px;padding:10px 15px;touch-action:manipulation}
   .clarify-button{min-height:48px;width:100%;touch-action:manipulation}
   .system-map{width:100%;overflow:hidden}
