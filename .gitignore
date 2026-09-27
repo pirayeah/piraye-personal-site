@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.astro/
+.tools/
+*.msi
+node-v*-win-x64.zip
+node-install.log
+preview-*.png
+

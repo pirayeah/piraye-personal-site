@@ -1,0 +1,21 @@
+Open my existing ChatGPT Site at:
+https://piraye-personal-site.blueuserno76045.chatgpt.site/
+
+Update that existing Site using the attached `piraye-personal-site-fa-update.zip` project. Do not create a second Site and do not change the current public URL or its access settings.
+
+Requirements:
+1. Treat this as a content-led static Astro website. It needs no database, authentication, form storage, secrets, or server-side state.
+2. Use the included source as authoritative. Do not rewrite, summarize, translate, or remove its copy.
+3. Preserve the existing English experience and all photographs, animations, responsive layouts, links, mailto CTA, and the “Untangle the System” interaction.
+4. Replace the Persian edition with the included improved translation and typography.
+5. Verify that the language switch:
+   - changes `lang` and `dir` on the root HTML element;
+   - uses full RTL layout in Persian;
+   - remembers the selected language in localStorage;
+   - displays Vazirmatn for Persian body copy and Noto Serif Arabic for Persian editorial headlines;
+   - remains usable on mobile widths.
+6. Confirm that `INDEX 001` does not appear anywhere.
+7. Build the Astro project and check all asset paths, email and LinkedIn links, mobile overflow, reduced-motion behavior, and Persian text rendering.
+8. Save a reviewable version first. Do not deploy it to production until I explicitly approve the preview.
+
+When the review version is ready, report any compatibility changes you made and show me the preview.

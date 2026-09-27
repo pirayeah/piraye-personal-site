@@ -1,0 +1,17 @@
+{
+  "name": "piraye-personal-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "quality": "astro check && astro build"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.10",
+    "astro": "^7.3.5",
+    "typescript": "^5.9.2"
+  }
+}

@@ -1,0 +1,216 @@
+---
+import '../styles/global.css';
+
+const mailSubject = encodeURIComponent("Let's connect");
+const mailBody = encodeURIComponent("Hi Piraye,\n\nI came across your website and would love to connect and explore how we might work together.\n\nBest,\n");
+const mailto = `mailto:piraye.777@gmail.com?subject=${mailSubject}&body=${mailBody}`;
+const base = import.meta.env.BASE_URL;
+const socialImage = new URL(`${base}images/piraye-coast-wide.jpg`, Astro.site);
+---
+
+<!doctype html>
+<html lang="en" dir="ltr" data-lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Piraye Pirhadi is a product manager focused on internal platforms, workflow automation, and turning complex systems into clearer products." />
+    <meta name="theme-color" content="#f4f7f5" />
+    <meta property="og:title" content="Piraye Pirhadi — Product Manager" />
+    <meta property="og:description" content="Making complex systems clearer, simpler, and more useful." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content={socialImage} />
+    <title>Piraye Pirhadi — Product Manager</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span class="en">PRODUCT THINKING // SYSTEMS // AUTOMATION // RESEARCH // CLARITY FROM COMPLEXITY // PRODUCT THINKING // SYSTEMS // AUTOMATION // RESEARCH // CLARITY FROM COMPLEXITY //</span>
+        <span class="fa">تفکر محصول // سیستم‌ها // اتوماسیون // تحقیق // وضوح در دل پیچیدگی // تفکر محصول // سیستم‌ها // اتوماسیون // تحقیق // وضوح در دل پیچیدگی //</span>
+      </div>
+    </div>
+
+    <button class="language-switch" type="button" aria-label="Switch language">
+      <span data-lang-label>FA</span><span class="switch-dot"></span>
+    </button>
+
+    <a class="floating-cta" href="#contact" aria-label="Jump to contact">
+      <span class="en">LET'S<br />CONNECT ↗</span>
+      <span class="fa">ارتباط<br />با من ↗</span>
+    </a>
+
+    <div class="shell">
+      <aside class="sidebar">
+        <header class="brand-row">
+          <a class="brand" href="#top">PIRAYE®</a>
+        </header>
+
+        <div class="hero-copy" id="top">
+          <p class="eyebrow en">PRODUCT MANAGER · TEHRAN, IRAN</p>
+          <p class="eyebrow fa">مدیر محصول · تهران، ایران</p>
+          <h1 class="en">Making <span class="scribble scribble--blue">complex</span> systems clearer, simpler &amp; more <span class="scribble scribble--pink">useful.</span></h1>
+          <h1 class="fa">پیچیدگی را می‌فهمم و آن را به محصولی <span class="scribble scribble--blue">شفاف‌تر</span>، ساده‌تر و <span class="scribble scribble--pink">کاربردی‌تر</span> تبدیل می‌کنم.</h1>
+          <p class="intro en">Hi, I’m Piraye — a product manager working at the intersection of people, processes, data, and technology.</p>
+          <p class="intro fa">سلام، من پیرایه‌ام؛ مدیر محصولی که میان آدم‌ها، فرایندها، داده و فناوری پل می‌زند.</p>
+        </div>
+
+        <div class="sidebar-footer">
+          <p class="availability"><i></i><span class="en">Open to meaningful product conversations</span><span class="fa">مشتاق گفت‌وگوهای جدی و معنادار درباره محصول</span></p>
+          <div class="sidebar-links">
+            <a href="https://linkedin.com/in/piraye-pirhadi" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+            <a href={mailto}>Email ↗</a>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main" id="main">
+        <section class="portrait-section" aria-labelledby="portrait-title">
+          <div class="image-frame hero-image reveal">
+            <img src={`${base}images/piraye-seaside-portrait.jpg`} alt="Piraye standing by the sea" width="1122" height="1402" fetchpriority="high" />
+            <span class="image-tag">PORTRAIT / 2026</span>
+          </div>
+          <div class="portrait-note reveal">
+            <span class="section-no">00</span>
+            <p id="portrait-title" class="en">Product Manager<br />Internal Platforms<br />&amp; Workflow Automation</p>
+            <p id="portrait-title-fa" class="fa">مدیر محصول<br />پلتفرم‌های داخلی<br />و اتوماسیون فرایند</p>
+          </div>
+        </section>
+
+        <section class="section about" id="about">
+          <header class="section-heading reveal">
+            <span class="section-no">01</span>
+            <p class="kicker en">THE THREAD THROUGH MY WORK</p>
+            <p class="kicker fa">نخ مشترک مسیر من</p>
+            <h2 class="en">Close to the problem.<br />Curious about the system.</h2>
+            <h2 class="fa">نزدیک به مسئله؛<br />کنجکاو درباره سازوکار آن.</h2>
+          </header>
+
+          <div class="about-grid">
+            <div class="about-story reveal">
+              <p class="en">My path into product started close to real users and operational problems — from customer service and business research to internal platforms and workflow automation.</p>
+              <p class="en">That journey taught me to ask better questions, uncover the structure behind messy problems, and help teams move toward practical decisions.</p>
+              <p class="fa">مسیر من به دنیای محصول از جایی آغاز شد که به کاربران واقعی و مسائل روزمره عملیات نزدیک بودم؛ از خدمات مشتری و پژوهش کسب‌وکار تا پلتفرم‌های داخلی و اتوماسیون جریان کار.</p>
+              <p class="fa">این مسیر به من آموخت پرسش‌های دقیق‌تری مطرح کنم، منطق پنهان مسئله‌های مبهم را پیدا کنم و به تیم‌ها کمک کنم به تصمیم‌هایی روشن و قابل‌اجرا برسند.</p>
+            </div>
+            <div class="chapter-list reveal">
+              <article><b>01</b><div><h3 class="en">Close to the problem</h3><h3 class="fa">از نزدیک لمس‌کردن مسئله</h3><p class="en">Users, service, and operations</p><p class="fa">کاربر، خدمات و عملیات</p></div></article>
+              <article><b>02</b><div><h3 class="en">Find the structure</h3><h3 class="fa">کشف ساختار پنهان</h3><p class="en">Research, patterns, and decisions</p><p class="fa">پژوهش، الگوها و تصمیم‌ها</p></div></article>
+              <article><b>03</b><div><h3 class="en">Build better systems</h3><h3 class="fa">ساختن سیستم‌های بهتر</h3><p class="en">Platforms, workflows, and automation</p><p class="fa">پلتفرم‌ها، جریان‌های کاری و اتوماسیون</p></div></article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section work" id="work">
+          <header class="section-heading reveal">
+            <span class="section-no">02</span>
+            <p class="kicker en">SELECTED WORK / FINANCIAL SERVICES</p>
+            <p class="kicker fa">منتخبی از تجربه‌ها / خدمات مالی</p>
+            <h2 class="en">Less noise.<br />More useful movement.</h2>
+            <h2 class="fa">پیچیدگی کمتر؛<br />پیشرفت مؤثرتر.</h2>
+          </header>
+
+          <div class="feature-card reveal">
+            <div class="feature-image image-frame">
+              <img src={`${base}images/piraye-at-work.jpg`} alt="Piraye working at a computer" width="1122" height="1402" loading="lazy" />
+              <span class="image-tag">PROCESS / PRACTICE</span>
+            </div>
+            <div class="feature-copy">
+              <span>CASE 001</span>
+              <h3 class="en">A platform migration without interruption.</h3>
+              <h3 class="fa">مهاجرت پلتفرم، بدون حتی یک وقفه در سرویس.</h3>
+              <p class="en">Supported the phased migration of 34 products from a legacy SMS service to a centralized notification platform, with rollback readiness throughout.</p>
+              <p class="fa">مشارکت در مهاجرت مرحله‌ای ۳۴ محصول از سرویس پیامک قدیمی به پلتفرم متمرکز اعلان؛ با امکان بازگشت در تمام مراحل و بدون اختلال در سرویس.</p>
+            </div>
+          </div>
+
+          <div class="case-grid">
+            <article class="case-card reveal"><strong>14 → 600</strong><h3 class="en">Throughput that could keep up.</h3><h3 class="fa">ظرفیتی که از رشد جا نماند.</h3><p class="en">Prioritized platform improvements supporting an increase from 14 to 600 TPS and reducing high-volume delivery time from roughly four hours to 20 minutes.</p><p class="fa">اولویت‌بندی بهبودهایی که ظرفیت پردازش را از ۱۴ به ۶۰۰ تراکنش در ثانیه رساند و زمان ارسال‌های پرتعداد را از حدود چهار ساعت به ۲۰ دقیقه کاهش داد.</p></article>
+            <article class="case-card case-card--dark reveal"><strong>33</strong><h3 class="en">Reusable journeys, not repetitive work.</h3><h3 class="fa">جریان‌های ماندگار، به‌جای کارهای تکراری.</h3><p class="en">Facilitated 33 automated journeys; selected workflows reduced campaign setup from about one week to a few minutes.</p><p class="fa">مشارکت در راه‌اندازی ۳۳ سفر خودکار مشتری؛ بعضی از این جریان‌ها زمان آماده‌سازی کمپین را از حدود یک هفته به چند دقیقه رساندند.</p></article>
+          </div>
+        </section>
+
+        <section class="section capabilities" id="capabilities">
+          <header class="section-heading reveal">
+            <span class="section-no">03</span>
+            <p class="kicker en">WHAT I HELP TEAMS DO</p><p class="kicker fa">کمکی که به تیم‌ها می‌کنم</p>
+            <h2 class="en">Capabilities, organized by outcome.</h2><h2 class="fa">توانمندی‌هایی که با نتیجه تعریف می‌شوند.</h2>
+          </header>
+          <div class="capability-list">
+            <details class="reveal" open><summary><b>01</b><span class="en">Turn ambiguity into direction</span><span class="fa">از ابهام، مسیر روشن می‌سازم</span><i>+</i></summary><p class="en">Product Discovery · Interviews · Problem Validation · PRDs · Roadmapping · Prioritization · MVP Scoping</p><p class="fa">کشف محصول · مصاحبه · اعتبارسنجی مسئله · سند نیازمندی محصول · نقشه راه · اولویت‌بندی · تعیین محدوده MVP</p></details>
+            <details class="reveal"><summary><b>02</b><span class="en">Make complex operations work better</span><span class="fa">عملیات پیچیده را روان‌تر می‌کنم</span><i>+</i></summary><p class="en">Internal Platforms · Workflow Automation · Customer Journeys · Service Migration · n8n</p><p class="fa">پلتفرم‌های داخلی · اتوماسیون جریان کار · سفر مشتری · مهاجرت سرویس · n8n</p></details>
+            <details class="reveal"><summary><b>03</b><span class="en">Help teams make better decisions</span><span class="fa">به تصمیم‌های سنجیده‌تر کمک می‌کنم</span><i>+</i></summary><p class="en">Strategic Research · SQL · Data Analysis · Looker Studio · Data-informed Prioritization</p><p class="fa">پژوهش راهبردی · SQL · تحلیل داده · Looker Studio · اولویت‌بندی مبتنی بر داده</p></details>
+            <details class="reveal"><summary><b>04</b><span class="en">Align people around the problem</span><span class="fa">افراد را حول مسئله هم‌راستا می‌کنم</span><i>+</i></summary><p class="en">Stakeholder Alignment · Cross-functional Collaboration · Vendor Management · SAFe · Agile Delivery</p><p class="fa">هم‌راستاسازی ذی‌نفعان · همکاری بین‌تیمی · مدیریت تأمین‌کننده · SAFe · تحویل چابک</p></details>
+            <details class="reveal"><summary><b>05</b><span class="en">Connect products and systems</span><span class="fa">میان محصول‌ها و سیستم‌ها ارتباط می‌سازم</span><i>+</i></summary><p class="en">API Fundamentals · Postman · WebEngage · Database Querying · JavaScript Comprehension</p><p class="fa">مبانی API · Postman · WebEngage · کوئری پایگاه داده · درک کد JavaScript</p></details>
+            <details class="reveal"><summary><b>06</b><span class="en">Think and build faster with AI</span><span class="fa">با هوش مصنوعی سریع‌تر فکر می‌کنم و می‌سازم</span><i>+</i></summary><p class="en">NotebookLM · Codex · AI-assisted Research &amp; Productivity</p><p class="fa">NotebookLM · Codex · پژوهش و بهره‌وری با کمک هوش مصنوعی</p></details>
+          </div>
+        </section>
+
+        <section class="section archive" id="archive">
+          <header class="section-heading reveal"><span class="section-no">04</span><p class="kicker en">EXPERIENCE INDEX</p><p class="kicker fa">مرور تجربه‌ها</p><h2 class="en">The path so far.</h2><h2 class="fa">مسیری که تا امروز پیموده‌ام.</h2></header>
+          <div class="archive-list">
+            <article class="reveal"><b>01</b><div><h3 class="en">Product Manager</h3><h3 class="fa">مدیر محصول</h3><p class="en">Enterprise Platforms &amp; Automation · Agah Group</p><p class="fa">پلتفرم‌های سازمانی و اتوماسیون · گروه آگاه</p></div><time>2024—NOW</time></article>
+            <article class="reveal"><b>02</b><div><h3 class="en">Associate Product Manager</h3><h3 class="fa">دستیار مدیر محصول</h3><p class="en">Discovery, requirements &amp; MVP definition · Agah Group</p><p class="fa">کشف، نیازمندی‌ها و تعریف MVP · گروه آگاه</p></div><time>2023—2024</time></article>
+            <article class="reveal"><b>03</b><div><h3 class="en">Business Researcher</h3><h3 class="fa">پژوهشگر کسب‌وکار</h3><p class="en">Transformation, CX &amp; organizational design · Agah Group</p><p class="fa">تحول، تجربه مشتری و طراحی سازمان · گروه آگاه</p></div><time>2021—NOW</time></article>
+            <article class="reveal"><b>04</b><div><h3 class="en">Customer Service &amp; Operations</h3><h3 class="fa">خدمات مشتری و عملیات</h3><p class="en">Service, call center operations &amp; enablement</p><p class="fa">خدمات، عملیات مرکز تماس و توانمندسازی</p></div><time>2020—2022</time></article>
+            <article class="reveal"><b>05</b><div><h3 class="en">MBA</h3><h3 class="fa">کارشناسی ارشد مدیریت کسب‌وکار</h3><p class="en">International Business Management · IMPS</p><p class="fa">مدیریت کسب‌وکار بین‌الملل · مؤسسه عالی آموزش و پژوهش مدیریت و برنامه‌ریزی</p></div><time>2019</time></article>
+            <article class="reveal"><b>06</b><div><h3 class="en">BSc</h3><h3 class="fa">کارشناسی مهندسی فناوری اطلاعات</h3><p class="en">Information Technology Engineering · PNU</p><p class="fa">مهندسی فناوری اطلاعات · دانشگاه پیام نور</p></div><time>2015</time></article>
+          </div>
+        </section>
+
+        <section class="section curiosities">
+          <header class="section-heading reveal"><span class="section-no">05</span><p class="kicker en">THINGS I KEEP COMING BACK TO</p><p class="kicker fa">موضوعاتی که ذهنم را رها نمی‌کنند</p><h2 class="en">Questions worth staying curious about.</h2><h2 class="fa">پرسش‌هایی که دوست دارم درباره‌شان کنجکاو بمانم.</h2></header>
+          <div class="question-cloud reveal">
+            <p class="en">Why do some complex systems feel simple?</p><p class="fa">چرا بعضی سیستم‌های پیچیده، ساده به نظر می‌رسند؟</p>
+            <p class="en">Where should automation stop and human judgment begin?</p><p class="fa">اتوماسیون کجا باید متوقف شود و قضاوت انسانی آغاز شود؟</p>
+            <p class="en">What makes a question genuinely useful?</p><p class="fa">چه چیزی یک پرسش را واقعاً راهگشا می‌کند؟</p>
+            <p class="en">How will AI change the way teams decide and build?</p><p class="fa">هوش مصنوعی چگونه شیوه تصمیم‌گیری و ساختن در تیم‌ها را تغییر می‌دهد؟</p>
+          </div>
+        </section>
+
+        <section class="untangle" id="untangle" aria-labelledby="untangle-title">
+          <div class="untangle-copy reveal">
+            <span class="section-no">INTERACTIVE</span>
+            <h2 id="untangle-title" class="en">Untangle<br />the system.</h2><h2 class="fa">گره‌های سیستم<br />را باز کنیم.</h2>
+            <p class="en">Pick the kind of mess you’re facing. Then make it clearer.</p><p class="fa">مسئله‌ای را که با آن روبه‌رو هستی انتخاب کن؛ بعد ببین چطور می‌شود آن را شفاف‌تر کرد.</p>
+            <div class="problem-options" role="group" aria-label="Choose a problem">
+              <button type="button" class="active" data-problem="manual"><span class="en">Too many manual steps</span><span class="fa">مراحل دستی بیش‌ازحد</span></button>
+              <button type="button" data-problem="conflict"><span class="en">Conflicting requirements</span><span class="fa">نیازمندی‌های متعارض</span></button>
+              <button type="button" data-problem="priority"><span class="en">Unclear priorities</span><span class="fa">اولویت‌های نامشخص</span></button>
+              <button type="button" data-problem="systems"><span class="en">Disconnected systems</span><span class="fa">سیستم‌های ناهماهنگ</span></button>
+            </div>
+            <button class="clarify-button" type="button"><span class="en">MAKE IT CLEARER ↗</span><span class="fa">شفاف‌ترش کن ↗</span></button>
+          </div>
+          <div class="system-map reveal" aria-live="polite">
+            <svg viewBox="0 0 600 560" role="img" aria-label="Interactive system map">
+              <g class="connections">
+                <path d="M110 100 Q330 20 480 125"/><path d="M110 100 Q180 280 85 430"/><path d="M480 125 Q340 270 505 430"/><path d="M85 430 Q300 320 505 430"/><path d="M110 100 Q380 330 505 430"/><path d="M480 125 Q150 260 85 430"/><path d="M85 430 Q300 510 505 430"/><path d="M110 100 Q290 170 300 280"/><path d="M480 125 Q380 210 300 280"/><path d="M85 430 Q160 320 300 280"/><path d="M505 430 Q410 320 300 280"/>
+              </g>
+              <g class="nodes">
+                <g class="node node--1"><circle r="62"/><text>PEOPLE</text></g>
+                <g class="node node--2"><circle r="62"/><text>DATA</text></g>
+                <g class="node node--3"><circle r="62"/><text>PROCESS</text></g>
+                <g class="node node--4"><circle r="62"/><text>TECH</text></g>
+                <g class="node node--center"><circle r="74"/><text>OUTCOME</text></g>
+              </g>
+            </svg>
+            <div class="clear-flow"><span>UNDERSTAND</span><i>→</i><span>STRUCTURE</span><i>→</i><span>PRIORITIZE</span><i>→</i><span>IMPROVE</span></div>
+          </div>
+        </section>
+
+        <section class="contact" id="contact">
+          <img src={`${base}images/piraye-coast-wide.jpg`} alt="Piraye at a coastal landscape" width="1672" height="941" loading="lazy" />
+          <div class="contact-overlay"></div>
+          <div class="contact-content reveal">
+            <p class="kicker en">HAVE A COMPLICATED PROBLEM?</p><p class="kicker fa">با یک مسئله پیچیده روبه‌رو هستی؟</p>
+            <h2 class="en">Let’s <span>build</span><br />something useful.</h2><h2 class="fa">بیایید با هم<br />چیزی <span>کاربردی</span> بسازیم.</h2>
+            <div class="contact-actions"><a href={mailto} class="primary-link">piraye.777@gmail.com ↗</a><a href="https://linkedin.com/in/piraye-pirhadi" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
+          </div>
+        </section>
+
+        <footer><span>© 2026 PIRAYE PIRHADI</span><span>DESIGNED AROUND CLARITY</span><a href="#top">BACK TO TOP ↑</a></footer>
+      </main>
+    </div>
+    <script is:inline src={`${base}site.js`}></script>
+  </body>
+</html>
